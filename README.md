@@ -12,18 +12,18 @@
 
 **penjelasan**
 
-```Ordered list atau daftar terurut digunakan untuk menampilkan data dalam bentuk urutan yang bernomor. Tag utama yang digunakan adalah <ol> (ordered list) dan <li> (list item) untuk setiap elemen daftar.
+Ordered list atau daftar terurut digunakan untuk menampilkan data dalam bentuk urutan yang bernomor. Tag utama yang digunakan adalah <ol> (ordered list) dan <li> (list item) untuk setiap elemen daftar.
 Contoh hasilnya menampilkan daftar dengan angka seperti 1, 2, 3, dan seterusnya.
-Tujuan penggunaannya adalah untuk menampilkan informasi yang memiliki urutan tertentu, seperti langkah-langkah atau daftar prioritas.```
+Tujuan penggunaannya adalah untuk menampilkan informasi yang memiliki urutan tertentu, seperti langkah-langkah atau daftar prioritas.
 
 **perubahan pertama**
 
 ![Perubahan Pertama](https://github.com/NadhiaShafira/Lab3Web./blob/d8e9be0ef268536df3721b23c118c3c519c9def1/Gambar%202%20Unordered%20List.jpg)
 
-``` **penjelasan**
+ **penjelasan**
 Unordered list digunakan untuk menampilkan data yang tidak memiliki urutan tertentu. Tag yang digunakan adalah <ul> (unordered list) dan <li> (list item).
 Berbeda dengan ordered list, daftar ini ditandai dengan simbol titik (•) di depan setiap item.
-Tujuan dari penggunaan unordered list adalah untuk menampilkan poin-poin informasi yang sejajar atau tidak memerlukan urutan angka.```
+Tujuan dari penggunaan unordered list adalah untuk menampilkan poin-poin informasi yang sejajar atau tidak memerlukan urutan angka.
 
 **tabel**
 
@@ -102,9 +102,9 @@ Tujuan form adalah memfasilitasi pengguna dalam mengirimkan data ke sistem atau 
 
 **penjelasan**
 
-```Dropdown dan listbox merupakan elemen form yang digunakan untuk memberikan pilihan kepada pengguna.
+Dropdown dan listbox merupakan elemen form yang digunakan untuk memberikan pilihan kepada pengguna.
 - Dropdown menggunakan tag <select> dan <option> tanpa atribut multiple, sehingga hanya dapat memilih satu pilihan.
-- Listbox juga menggunakan <select> dan <option> namun ditambahkan atribut multiple, sehingga pengguna dapat memilih lebih dari satu       pilihan sekaligus (biasanya dengan menekan tombol Ctrl atau Shift).```
+- Listbox juga menggunakan <select> dan <option> namun ditambahkan atribut multiple, sehingga pengguna dapat memilih lebih dari satu       pilihan sekaligus (biasanya dengan menekan tombol Ctrl atau Shift).
 
 Selain itu, tombol <button type="submit"> dan <button type="reset"> digunakan untuk mengirim dan menghapus isian form.
 Tujuan penggunaan dropdown dan listbox adalah agar pengguna dapat memilih data dari daftar yang telah disediakan dengan cara yang praktis dan efisien.
