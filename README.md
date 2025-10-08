@@ -14,3 +14,5 @@
 
 ![Perubahan Tabel](https://github.com/NadhiaShafira/Lab3Web./blob/2aac18a818b75a214e50bead64e7a30f605d8aa8/Gambar%204%20Membuat%20tabel%202.jpg) 
 
+![Membuat Form](https://github.com/NadhiaShafira/Lab3Web./blob/75995b9708d3e132121f43445410b8c78472b5ec/Gambar%205%20Membuat%20Form%201.jpg) 
+
