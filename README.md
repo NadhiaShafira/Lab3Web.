@@ -12,18 +12,18 @@
 
 **penjelasan**
 
-Ordered list atau daftar terurut digunakan untuk menampilkan data dalam bentuk urutan yang bernomor. Tag utama yang digunakan adalah <ol> (ordered list) dan <li> (list item) untuk setiap elemen daftar.
+```Ordered list atau daftar terurut digunakan untuk menampilkan data dalam bentuk urutan yang bernomor. Tag utama yang digunakan adalah <ol> (ordered list) dan <li> (list item) untuk setiap elemen daftar.
 Contoh hasilnya menampilkan daftar dengan angka seperti 1, 2, 3, dan seterusnya.
-Tujuan penggunaannya adalah untuk menampilkan informasi yang memiliki urutan tertentu, seperti langkah-langkah atau daftar prioritas.
+Tujuan penggunaannya adalah untuk menampilkan informasi yang memiliki urutan tertentu, seperti langkah-langkah atau daftar prioritas.```
 
 **perubahan pertama**
 
 ![Perubahan Pertama](https://github.com/NadhiaShafira/Lab3Web./blob/d8e9be0ef268536df3721b23c118c3c519c9def1/Gambar%202%20Unordered%20List.jpg)
 
- **penjelasan**
+``` **penjelasan**
 Unordered list digunakan untuk menampilkan data yang tidak memiliki urutan tertentu. Tag yang digunakan adalah <ul> (unordered list) dan <li> (list item).
 Berbeda dengan ordered list, daftar ini ditandai dengan simbol titik (•) di depan setiap item.
-Tujuan dari penggunaan unordered list adalah untuk menampilkan poin-poin informasi yang sejajar atau tidak memerlukan urutan angka.
+Tujuan dari penggunaan unordered list adalah untuk menampilkan poin-poin informasi yang sejajar atau tidak memerlukan urutan angka.```
 
 **tabel**
 
