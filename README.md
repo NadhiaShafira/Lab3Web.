@@ -16,3 +16,5 @@
 
 ![Membuat Form](https://github.com/NadhiaShafira/Lab3Web./blob/75995b9708d3e132121f43445410b8c78472b5ec/Gambar%205%20Membuat%20Form%201.jpg) 
 
+![Perubahan Form](https://github.com/NadhiaShafira/Lab3Web./blob/fd6c48cb0f17821ac6ef77604a90625282660514/Gambar%206%20Membuat%20Form%202.jpg) 
+
