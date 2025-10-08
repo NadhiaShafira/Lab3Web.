@@ -76,9 +76,7 @@ Tujuan form adalah memfasilitasi pengguna dalam mengirimkan data ke sistem atau 
 ![DropDown dan listbox](https://github.com/NadhiaShafira/Lab3Web./blob/ac6ec1d8a18bf8027a141d75abf023a1903db895/Gambar%207%20DropDown.jpg) 
 
 Dropdown dan listbox merupakan elemen form yang digunakan untuk memberikan pilihan kepada pengguna.
-
 - Dropdown menggunakan tag <select> dan <option> tanpa atribut multiple, sehingga hanya dapat memilih satu pilihan.
-
 - Listbox juga menggunakan <select> dan <option> namun ditambahkan atribut multiple, sehingga pengguna dapat memilih lebih dari satu       pilihan sekaligus (biasanya dengan menekan tombol Ctrl atau Shift).
 
 Selain itu, tombol <button type="submit"> dan <button type="reset"> digunakan untuk mengirim dan menghapus isian form.
