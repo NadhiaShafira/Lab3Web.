@@ -27,18 +27,18 @@ Tujuan dari penggunaan unordered list adalah untuk menampilkan poin-poin informa
 **penjelasan tabel**
 Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom. Tag yang digunakan antara lain:
 
-**<table>**→ untuk membuat tabel
+table→ untuk membuat tabel
 
-**<tr>**→ untuk membuat baris (table row)
+tr→ untuk membuat baris (table row)
 
-**<th>** → untuk membuat judul kolom (table header)
+th → untuk membuat judul kolom (table header)
 
-**<td>** → untuk membuat isi data (table data)
+td → untuk membuat isi data (table data)
 
 Selain itu, atribut border="1" digunakan untuk menampilkan garis batas tabel agar lebih jelas terlihat.
 Tujuan pembuatan tabel adalah untuk menyajikan data secara terstruktur dan mudah dibaca, seperti data fakultas dan program studi.
 
-**peubahan tabel**
+**perubahan tabel**
 ![Foto](https://github.com/NadhiaShafira/Lab3Web./blob/2aac18a818b75a214e50bead64e7a30f605d8aa8/Gambar%204%20Membuat%20tabel%202.jpg) 
 
  **penjelasan**
@@ -59,13 +59,13 @@ Perubahan pada pembuatan tabel dilakukan dengan menambahkan beberapa elemen pent
 Form digunakan untuk mengumpulkan data dari pengguna. Struktur umumnya menggunakan tag <form> sebagai wadah utama.
 Di dalam form terdapat beberapa elemen seperti:
 
-**<input type="text">** → untuk input teks biasa seperti nama.
+input type="text"→ untuk input teks biasa seperti nama.
 
-**<textarea>** → untuk input teks yang panjang seperti alamat.
+textarea→ untuk input teks yang panjang seperti alamat.
 
-<input type="radio"> → untuk memilih satu pilihan dari beberapa opsi, misalnya jenis kelamin.
+input type="radio"→ untuk memilih satu pilihan dari beberapa opsi, misalnya jenis kelamin.
 
-<button> → untuk tombol kirim (submit) atau aksi lain seperti reset.
+button → untuk tombol kirim (submit) atau aksi lain seperti reset.
 
 Selain itu, <fieldset> dan <legend> digunakan untuk mengelompokkan input agar tampilan form lebih rapi dan terstruktur.
 Tujuan form adalah memfasilitasi pengguna dalam mengirimkan data ke sistem atau server.
