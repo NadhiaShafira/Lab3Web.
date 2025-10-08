@@ -95,10 +95,13 @@ Tujuan form adalah memfasilitasi pengguna dalam mengirimkan data ke sistem atau 
 - Menyusun ulang posisi label dan input supaya form lebih teratur dan mudah digunakan.
 
  Hasilnya: form menjadi lebih interaktif, lengkap, dan fungsional untuk menginput berbagai jenis data.
+ 
 
 **Dropdown dan listbox**
 
+
 ![Foto](https://github.com/NadhiaShafira/Lab3Web./blob/aecbf927969f59d04d98f3e6177426b5e840512d/Gambar%207%20DropDown.jpg)
+
 
 **penjelasan**
 
