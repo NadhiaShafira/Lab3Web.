@@ -12,3 +12,5 @@
 
 ![Hasil tabel](https://github.com/NadhiaShafira/Lab3Web./blob/ed9cf47fcf38b8cc8dbcb2b984b019c46f8e1b20/Gambar%203%20Membuat%20tabel%201.jpg) 
 
+![Perubahan Tabel](https://github.com/NadhiaShafira/Lab3Web./blob/2aac18a818b75a214e50bead64e7a30f605d8aa8/Gambar%204%20Membuat%20tabel%202.jpg) 
+
