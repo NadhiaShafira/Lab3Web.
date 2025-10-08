@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Form: Dropdown & Listbox (Multiple)</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+    body{padding:24px;background:#f6f8fa;color:#0b1220}
+    .card{background:white;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.08);padding:20px;max-width:720px;margin:0 auto}
+    label{display:block;margin-bottom:8px;font-weight:600}
+    select{width:100%;padding:10px;border-radius:8px;border:1px solid #dbe4ee;font-size:14px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .actions{display:flex;gap:8px;margin-top:12px}
+    button{padding:8px 14px;border-radius:8px;border:0;background:#0b63d5;color:white;cursor:pointer}
+    button.secondary{background:#eef3ff;color:#0b63d5;border:1px solid #d7e4ff}
+    .result{margin-top:14px;padding:12px;border-radius:8px;background:#f3f7ff;border:1px solid #e2e9ff}
+    small.hint{display:block;margin-top:6px;color:#586070}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Contoh Form — Dropdown &amp; Listbox (Multiple)</h2>
+    <p class="hint">Pilih satu opsi dari dropdown, dan pilih satu atau beberapa item dari listbox (tekan Ctrl / Cmd untuk memilih lebih dari satu pada desktop).</p>
+
+    <form id="myForm">
+      <div class="row">
+        <div>
+          <label for="country">Dropdown (pilih 1)</label>
+          <select id="country" name="country" required>
+            <option value="">-- Pilih negara --</option>
+            <option value="id">Indonesia</option>
+            <option value="my">Malaysia</option>
+            <option value="sg">Singapore</option>
+            <option value="th">Thailand</option>
+            <option value="ph">Philippines</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="features">Listbox (pilih banyak)</label>
+          <select id="features" name="features" multiple size="6" aria-label="Pilih fitur">
+            <option value="social">Media Sosial</option>
+            <option value="seo">SEO</option>
+            <option value="ads">Iklan Berbayar</option>
+            <option value="email">Email Marketing</option>
+            <option value="analytics">Analytics</option>
+            <option value="ux">UX & Desain</option>
+          </select>
+          <small class="hint">Gunakan Ctrl/Cmd atau Shift untuk memilih beberapa opsi.</small>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit">Kirim</button>
+        <button type="button" class="secondary" id="clearBtn">Bersihkan</button>
+      </div>
+
+      <div id="output" class="result" hidden></div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('myForm');
+    const output = document.getElementById('output');
+    const clearBtn = document.getElementById('clearBtn');
+
+    function getSelectedOptions(select) {
+      // returns array of {value, text}
+      return Array.from(select.selectedOptions).map(o => ({ value: o.value, text: o.text }));
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const country = document.getElementById('country').value;
+      const countryText = document.getElementById('country').selectedOptions[0]?.text || '';
+      const featuresSelect = document.getElementById('features');
+      const selectedFeatures = getSelectedOptions(featuresSelect);
+
+      // simple validation
+      if (!country) {
+        output.hidden = false;
+        output.textContent = 'Silakan pilih negara pada dropdown.';
+        return;
+      }
+
+      // show result
+      output.hidden = false;
+      output.innerHTML = `
+        <strong>Hasil pilihan:</strong>
+        <ul>
+          <li><strong>Negara:</strong> ${countryText} (${country})</li>
+          <li><strong>Fitur terpilih:</strong>
+            ${selectedFeatures.length ? '<ul>' + selectedFeatures.map(f => `<li>${f.text} (${f.value})</li>`).join('') + '</ul>' : '<em>tidak ada</em>'}
+          </li>
+        </ul>
+      `;
+    });
+
+    clearBtn.addEventListener('click', () => {
+      form.reset();
+      // manually clear multiple select
+      const features = document.getElementById('features');
+      Array.from(features.options).forEach(opt => opt.selected = false);
+      output.hidden = true;
+      output.innerHTML = '';
+    });
+
+    // progressive enhancement: show currently selected values when listbox changes
+    document.getElementById('features').addEventListener('change', () => {
+      const sel = getSelectedOptions(document.getElementById('features'));
+      if (sel.length) {
+        output.hidden = false;
+        output.innerHTML = '<strong>Preview fitur terpilih:</strong><br>' + sel.map(s => s.text).join(', ');
+      } else {
+        // hide preview if nothing selected
+        if (!document.getElementById('country').value) output.hidden = true;
+      }
+    });
+  </script>
+</body>
+</html>
